@@ -29,7 +29,7 @@ using aes_key_t = std::array<uint8_t, 4 * Nk>;
 using aes_block_t = std::array<uint8_t, AES_BLOCK_LEN>;
 
 /**
- * Encrypt blocks with AES-256
+ * Encrypt or decrypt blocks with AES256-CTR
  *
  * @param out Vector of blocks
  * @param sk Secret key
@@ -39,7 +39,7 @@ using aes_block_t = std::array<uint8_t, AES_BLOCK_LEN>;
 void aesctr256(std::vector<aes_block_t>& out, const aes_key_t &sk, const aes_block_t &counter);
 
 /**
- * Encrypt one block with AES-256
+ * Encrypt or decrypt one block with AES256-CTR
  *
  * @param block Data block
  * @param sk Secret key
