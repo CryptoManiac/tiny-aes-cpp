@@ -3,7 +3,7 @@
 ## Memory safety
 
 * Not using pointers, pointer casting and whatever potentially dangerous stuff unless absolutely necessary.
-* Only deterministic and transparent types are aavailable through public API functions.
+* Only deterministic and transparent types are available for the public API functions.
 
 ## API
 
